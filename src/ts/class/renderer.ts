@@ -1,4 +1,4 @@
-import { WebGLRenderer, PCFSoftShadowMap } from 'three';
+import { WebGLRenderer, PCFSoftShadowMap, ReinhardToneMapping, Color } from 'three';
 import { Base } from './base';
 
 export class Renderer {
@@ -22,7 +22,9 @@ export class Renderer {
         this.instance.toneMappingExposure = 1.75
         this.instance.shadowMap.enabled = true
         this.instance.shadowMap.type = PCFSoftShadowMap
-        this.instance.setClearColor(0xffffff)
+        this.instance.toneMapping = ReinhardToneMapping;
+        this.instance.toneMappingExposure = 4
+        this.instance.setClearColor(new Color('rgba(171,47,105)'), 0)
         this.resize();
     }
 

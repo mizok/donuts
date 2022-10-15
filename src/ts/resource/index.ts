@@ -1,12 +1,14 @@
 import { textureSources } from './textures';
+import { modelSources } from './model';
 import { TextureLoader, CubeTextureLoader } from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 interface SourceObj {
 	name: string,
 	content: any
 }
 
-
+const gltfLoader = new GLTFLoader();
 const textureLoader = new TextureLoader();
 const cubeTextureLoader = new CubeTextureLoader();
 
@@ -44,16 +46,37 @@ const getCubeTexture = (source: any) => {
 	return prm;
 }
 
-
+const getGltf = (source: any) => {
+	const prm: Promise<SourceObj> = new Promise((res, rej) => {
+		gltfLoader.load(
+			source.path,
+			(model) => {
+				res({
+					name: source.name,
+					content: model
+				});
+			},
+			null,
+			rej
+		);
+	});
+	return prm;
+}
 
 export const getResources = () => {
 
 	const promiseArr: Promise<SourceObj>[] = [];
 
-	for (let textureSource of textureSources) {
-		switch (textureSource.type) {
-			case 'cubeTexture': promiseArr.push(getCubeTexture(textureSource))
-			case 'texture': promiseArr.push(getTexture(textureSource))
+	const sources = [...textureSources, ...modelSources];
+
+	for (let source of sources) {
+		switch (source.type) {
+			case 'cubeTexture': promiseArr.push(getCubeTexture(source));
+				break;
+			case 'texture': promiseArr.push(getTexture(source));
+				break;
+			case 'gltfModel': promiseArr.push(getGltf(source));
+				break;
 		}
 	}
 

@@ -13,11 +13,11 @@ export class Camera {
         private base: Base
     ) {
         this.setInstance()
-        this.setControls()
+        // this.setControls()
     }
 
     setInstance() {
-        const camera = new PerspectiveCamera(35, this.sizer.width / this.sizer.height, 0.1, 100);
+        const camera = new PerspectiveCamera(75, this.sizer.width / this.sizer.height, 0.1, 100);
         camera.position.set(0, 0, 5);
         this.instance = camera;
         this.scene.add(this.instance)
@@ -34,6 +34,6 @@ export class Camera {
     }
 
     update() {
-        this.controls.update()
+        // this.controls.update()
     }
 }

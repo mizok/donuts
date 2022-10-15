@@ -1,0 +1,273 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.8.19",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Torus"
+        },
+        {
+            "mesh" : 1,
+            "name" : "icing"
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.003",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.8000000715255737,
+                    0.24147473275661469,
+                    0.5061811208724976,
+                    1
+                ],
+                "metallicFactor" : 0.37931033968925476,
+                "roughnessFactor" : 0.06896553933620453
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.8000000715255737,
+                    0.4181480407714844,
+                    0.09306357055902481,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Torus",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Torus.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5
+                    },
+                    "indices" : 6,
+                    "material" : 1
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 7,
+                        "NORMAL" : 8
+                    },
+                    "indices" : 9,
+                    "material" : 2
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "base map",
+            "uri" : "base%20map.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 13402,
+            "max" : [
+                0.04686513543128967,
+                0.04032367467880249,
+                0.04726948216557503
+            ],
+            "min" : [
+                -0.04645710065960884,
+                -0.0005790572613477707,
+                -0.04692992568016052
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 13402,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 13402,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 76800,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 210272,
+            "max" : [
+                0.049704160541296005,
+                0.0422820970416069,
+                0.04859539493918419
+            ],
+            "min" : [
+                -0.0500946119427681,
+                0.008459342643618584,
+                -0.048755623400211334
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 210272,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5125,
+            "count" : 1261632,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 95360,
+            "max" : [
+                0.048948634415864944,
+                0.043287813663482666,
+                0.04622555896639824
+            ],
+            "min" : [
+                -0.04610353708267212,
+                0.027050303295254707,
+                -0.04782024025917053
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 95360,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5125,
+            "count" : 568584,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 160824,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 160824,
+            "byteOffset" : 160824
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 107216,
+            "byteOffset" : 321648
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 153600,
+            "byteOffset" : 428864
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2523264,
+            "byteOffset" : 582464
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2523264,
+            "byteOffset" : 3105728
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5046528,
+            "byteOffset" : 5628992
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1144320,
+            "byteOffset" : 10675520
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1144320,
+            "byteOffset" : 11819840
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2274336,
+            "byteOffset" : 12964160
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 15238496,
+            "uri" : "donuts.bin"
+        }
+    ]
+}

@@ -17,6 +17,7 @@ export class Base {
         [key: string]: any
     }
 
+
     constructor(public canvas: HTMLCanvasElement) {
         this.initResizeMechanic();
         this.initTickMechanic();
